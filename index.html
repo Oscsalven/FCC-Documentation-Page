@@ -21,7 +21,7 @@
                 a specific condition is true, so when it changes to false, the loop stops. The loops coverered are:
                 <ul>
                     <li>for</li>
-                    <li>for each</li>
+                    <li>forEach</li>
                     <li>while</li>
                     <li>do .... while</li>
                     <li>for ... in</li>
@@ -34,34 +34,79 @@
             <header>
                 <h2>For Loop</h2>
             </header>
+            <p>
+                The for loop helps us to perform one tasks several times, each iteration 
+                will use different values, until certain condition, set by us, is false.
+            </p>
+            <p>The for loop is created in the following way:</p>
+            <code>
+                for(x, y, z) { <br>
+                    // do stuff <br>
+                }
+            </code>
+            <p>Where:</p>
+            <ul>
+                <li>x is the starting condition, this will run only once</li>
+                <li>y is the condition that must be met every time the code runs</li>
+                <li>z represents how x will change once the code has ran</li>
+            </ul>
         </section>
-        <section id="for_each_loop" class="main-section">
+        <section id="forEach_loop" class="main-section">
             <header>
-                <h2>For Each Loop</h2>
+                <h2>ForEach Loop</h2>
             </header>
+            <p>
+                The forEach loop works with an array. This method will loop through each element
+                in an array and call a function on it.
+            </p>
+            <p>The sintax looks like this:</p>
+            <code>
+                array.forEach(element => {// do stuff})
+            </code>
         </section>
         <section id="while_loop" class="main-section">
             <header>
                 <h2>While Loop</h2>
             </header>
+            <p>
+                The while loop will run some code every time a condition we set is true. The while Loop
+                will verify this before running the code. The sintax is the following:
+            </p>
+            <code>
+                while(condition) {<br>
+                    //do stuff <br>
+                }
+            </code>
         </section>
         <section id="do_while_loop" class="main-section">
             <header>
                 <h2>Do While Loop</h2>
             </header>
             <p>
-                
+                This a variant of the while loop. In this case, the code will run and once
+                it's done, the loop will verify if our condition is still true.
             </p>
+            <code>
+                do { <br>
+                    // do stuff <br> 
+                } <br>
+                while (condition);
+            </code>
         </section>
         <section id="for_in_loop" class="main-section">
             <header>
                 <h2>For In Loop</h2>
             </header>
-        </section>
-        <section id="break" class="main-section">
-            <header>
-                <h2>Break</h2>
-            </header>
+            <p>
+                This loop iterates through the elements of an object or an array through a key, 
+                which will access the value of each element. The sintax is the same for both objects
+                and arrays.
+            </p>
+            <code>
+                for (variable/key in array/obeject) {<br>
+                    //do stuff <br>
+                }
+            </code>
         </section>
     </main>
 </body>
