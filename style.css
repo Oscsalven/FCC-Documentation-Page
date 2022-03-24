@@ -1,0 +1,61 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    margin: 1em;
+}
+
+code {
+    background-color: gainsboro;
+}
+
+/* ***Nav bar stuff*** */
+#navbar {
+    background-color: #C2E7DA;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#nav-header {
+    padding-bottom: 0.5em;
+    font-size: 1.75em;
+}
+
+.links {
+    border: 1.5px solid #ffffff;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/* Navbar media query */
+@media (min-width: 45em) {
+    body {
+        display: grid;
+        grid-template-areas: "navbar main";
+    }
+
+    main {
+        grid-area: "main";
+    }
+
+    #nav-header {
+        padding: 0.5em;
+    }
+
+    #navbar {
+        grid-area: "navbar";
+    }
+}
